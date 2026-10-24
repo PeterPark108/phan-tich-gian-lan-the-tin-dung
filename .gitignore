@@ -1,0 +1,12 @@
+# Dữ liệu gốc ~150 MB: tải lại bằng download_data.py
+data/creditcard.csv
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+# Power BI: file cache cục bộ
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix.bak
+build/

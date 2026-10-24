@@ -1,0 +1,570 @@
+{
+  "config": "{\"version\": \"5.59\", \"themeCollection\": {\"customTheme\": {\"name\": \"peterpark_theme.json\", \"version\": \"5.59\", \"type\": 1}}, \"activeSectionIndex\": 0, \"settings\": {\"useStylableVisualContainerHeader\": true, \"exportDataMode\": 1}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "peterpark_theme.json",
+            "path": "peterpark_theme.json",
+            "type": 202
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "ReportSection0",
+      "displayName": "Tổng quan",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 815,
+      "filters": "[]",
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 6,
+          "z": 1000,
+          "width": 1240,
+          "height": 48,
+          "config": "{\"name\": \"v0013970d7a4cd5b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 6, \"z\": 1000, \"width\": 1240, \"height\": 48}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"💳 PeterPark · Gian lận thẻ – Tổng quan\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 58,
+          "z": 2000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v002ace1b9b4dce7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 58, \"z\": 2000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.ngay\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"ngay\"}, \"Name\": \"fact_giao_dich.ngay\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'📅 Ngày (1–2)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 290,
+          "y": 58,
+          "z": 3000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v003898c479f1e7a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 290, \"y\": 58, \"z\": 3000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_gio.buoi\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"buoi\"}, \"Name\": \"dim_gio.buoi\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'🕒 Buổi (giờ tương đối)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 560,
+          "y": 58,
+          "z": 4000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v00496c753cfc5fc\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 58, \"z\": 4000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_khoang_tien.nhom\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"nhom\"}, \"Name\": \"dim_khoang_tien.nhom\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'💶 Nhóm số tiền'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 167,
+          "z": 5000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0053f75babe4179\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 167, \"z\": 5000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Số giao dịch\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số giao dịch\"}, \"Name\": \"fact_giao_dich.Số giao dịch\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Số giao dịch'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 227,
+          "y": 167,
+          "z": 6000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v00636dba60985cd\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 227, \"y\": 167, \"z\": 6000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Số gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}, \"Name\": \"fact_giao_dich.Số gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Số gian lận'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 434,
+          "y": 167,
+          "z": 7000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0073e24b344c169\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 434, \"y\": 167, \"z\": 7000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ gian lận\"}, \"Name\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tỷ lệ gian lận'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 641,
+          "y": 167,
+          "z": 8000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0083a00875a8ca4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 641, \"y\": 167, \"z\": 8000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Tiền gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tiền gian lận\"}, \"Name\": \"fact_giao_dich.Tiền gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tiền gian lận (EUR)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 848,
+          "y": 167,
+          "z": 9000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v009983cc8b2b252\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 848, \"y\": 167, \"z\": 9000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Trung vị tiền gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Trung vị tiền gian lận\"}, \"Name\": \"fact_giao_dich.Trung vị tiền gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Trung vị GL (EUR)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1055,
+          "y": 167,
+          "z": 10000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v010c13d5ce2df42\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1055, \"y\": 167, \"z\": 10000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Trung vị tiền bình thường\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Trung vị tiền bình thường\"}, \"Name\": \"fact_giao_dich.Trung vị tiền bình thường\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Trung vị BT (EUR)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 282,
+          "z": 11000,
+          "width": 820,
+          "height": 240,
+          "config": "{\"name\": \"v011de792fc0ff5d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 282, \"z\": 11000, \"width\": 820, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"lineClusteredColumnComboChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_gio.nhan_gio\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Số giao dịch\"}], \"Y2\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"nhan_gio\"}, \"Name\": \"dim_gio.nhan_gio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số giao dịch\"}, \"Name\": \"fact_giao_dich.Số giao dịch\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ gian lận\"}, \"Name\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Lưu lượng (cột) và tỷ lệ gian lận (đường) theo giờ tương đối'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 282,
+          "z": 12000,
+          "width": 410,
+          "height": 240,
+          "config": "{\"name\": \"v0120c10e19cbf3d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 282, \"z\": 12000, \"width\": 410, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_khoang_tien.nhom\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Số gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"nhom\"}, \"Name\": \"dim_khoang_tien.nhom\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}, \"Name\": \"fact_giao_dich.Số gian lận\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gian lận theo nhóm số tiền'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 530,
+          "z": 13000,
+          "width": 620,
+          "height": 250,
+          "config": "{\"name\": \"v01399e26b40d31a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 530, \"z\": 13000, \"width\": 620, \"height\": 250}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_khoang_tien.khoang_tien\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"khoang_tien\"}, \"Name\": \"dim_khoang_tien.khoang_tien\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ gian lận\"}, \"Name\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tỷ lệ gian lận theo khoảng số tiền (EUR)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 650,
+          "y": 530,
+          "z": 14000,
+          "width": 610,
+          "height": 250,
+          "config": "{\"name\": \"v014e8e4e5a52b43\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 650, \"y\": 530, \"z\": 14000, \"width\": 610, \"height\": 250}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_khoang_tien.khoang_tien\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Tiền gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"khoang_tien\"}, \"Name\": \"dim_khoang_tien.khoang_tien\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tiền gian lận\"}, \"Name\": \"fact_giao_dich.Tiền gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tiền gian lận theo khoảng số tiền (EUR)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 785,
+          "z": 15000,
+          "width": 1240,
+          "height": 26,
+          "config": "{\"name\": \"v015e16a5dc89398\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 785, \"z\": 15000, \"width\": 1240, \"height\": 26}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Nguồn: Credit Card Fraud Detection – Worldline & ULB Machine Learning Group (ODbL) · 284.807 giao dịch thẻ châu Âu trong 2 ngày (9/2013) · V1..V28 là PCA ẩn danh · Giờ là giờ tương đối tính từ giao dịch đầu tiên.\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#555555\"}}]}]}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection1",
+      "displayName": "Thời gian & số tiền",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 815,
+      "filters": "[]",
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 6,
+          "z": 16000,
+          "width": 1240,
+          "height": 48,
+          "config": "{\"name\": \"v016fc959d67e557\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 6, \"z\": 16000, \"width\": 1240, \"height\": 48}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"💳 PeterPark · Thời gian & giao dịch thăm dò\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 58,
+          "z": 17000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v0172f5016f4b23b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 58, \"z\": 17000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.ngay\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"ngay\"}, \"Name\": \"fact_giao_dich.ngay\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'📅 Ngày (1–2)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 290,
+          "y": 58,
+          "z": 18000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v0181e4bbdce7f55\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 290, \"y\": 58, \"z\": 18000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_gio.buoi\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"buoi\"}, \"Name\": \"dim_gio.buoi\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'🕒 Buổi (giờ tương đối)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 560,
+          "y": 58,
+          "z": 19000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v01980334baa84e0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 58, \"z\": 19000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_khoang_tien.nhom\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"nhom\"}, \"Name\": \"dim_khoang_tien.nhom\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'💶 Nhóm số tiền'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 167,
+          "z": 20000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0205df5cf4f1a6e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 167, \"z\": 20000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Gian lận ≤ 1 EUR\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Gian lận ≤ 1 EUR\"}, \"Name\": \"fact_giao_dich.Gian lận ≤ 1 EUR\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gian lận ≤ 1 EUR'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 227,
+          "y": 167,
+          "z": 21000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v02150ef662ca455\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 227, \"y\": 167, \"z\": 21000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ GL ≤ 1 EUR\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ GL ≤ 1 EUR\"}, \"Name\": \"fact_giao_dich.Tỷ lệ GL ≤ 1 EUR\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tỷ lệ GL ≤ 1 EUR'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 434,
+          "y": 167,
+          "z": 22000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v02256a92c90d7c7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 434, \"y\": 167, \"z\": 22000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Gian lận đúng 1 EUR\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Gian lận đúng 1 EUR\"}, \"Name\": \"fact_giao_dich.Gian lận đúng 1 EUR\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gian lận đúng 1,00 EUR'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 641,
+          "y": 167,
+          "z": 23000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0235f7e783d3b8f\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 641, \"y\": 167, \"z\": 23000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Giờ rủi ro nhất\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Giờ rủi ro nhất\"}, \"Name\": \"fact_giao_dich.Giờ rủi ro nhất\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Giờ rủi ro nhất'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 848,
+          "y": 167,
+          "z": 24000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v024cf4379839c0b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 848, \"y\": 167, \"z\": 24000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.% tiền bị gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"% tiền bị gian lận\"}, \"Name\": \"fact_giao_dich.% tiền bị gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% tiền bị gian lận'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1055,
+          "y": 167,
+          "z": 25000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v025edd70794801e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1055, \"y\": 167, \"z\": 25000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Tổng tiền\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tổng tiền\"}, \"Name\": \"fact_giao_dich.Tổng tiền\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tổng tiền (EUR)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 282,
+          "z": 26000,
+          "width": 1240,
+          "height": 250,
+          "config": "{\"name\": \"v0260b557c2286c6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 282, \"z\": 26000, \"width\": 1240, \"height\": 250}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Rows\": [{\"queryRef\": \"dim_khoang_tien.khoang_tien\", \"active\": true}], \"Columns\": [{\"queryRef\": \"dim_gio.gio\"}], \"Values\": [{\"queryRef\": \"fact_giao_dich.Số gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}, {\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"khoang_tien\"}, \"Name\": \"dim_khoang_tien.khoang_tien\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"gio\"}, \"Name\": \"dim_gio.gio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}, \"Name\": \"fact_giao_dich.Số gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Bản đồ nhiệt số gian lận: Khoảng tiền × Giờ tương đối'\"}}}}}]}, \"objects\": {\"values\": [{\"properties\": {\"backColor\": {\"solid\": {\"color\": {\"expr\": {\"FillRule\": {\"Input\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}}, \"FillRule\": {\"linearGradient2\": {\"min\": {\"color\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}, \"max\": {\"color\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}, \"nullColoringStrategy\": {\"strategy\": {\"Literal\": {\"Value\": \"'asZero'\"}}}}}}}}}}}, \"selector\": {\"data\": [{\"dataViewWildcard\": {\"matchingOption\": 1}}], \"metadata\": \"fact_giao_dich.Số gian lận\"}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 540,
+          "z": 27000,
+          "width": 820,
+          "height": 240,
+          "config": "{\"name\": \"v027b415b98f8fa1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 540, \"z\": 27000, \"width\": 820, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_gio.nhan_gio\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Số gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"nhan_gio\"}, \"Name\": \"dim_gio.nhan_gio\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số gian lận\"}, \"Name\": \"fact_giao_dich.Số gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Số gian lận theo giờ tương đối'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 540,
+          "z": 28000,
+          "width": 410,
+          "height": 240,
+          "config": "{\"name\": \"v02826967ff5c806\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 540, \"z\": 28000, \"width\": 410, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"dim_gio.buoi\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"buoi\"}, \"Name\": \"dim_gio.buoi\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ gian lận\"}, \"Name\": \"fact_giao_dich.Tỷ lệ gian lận\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tỷ lệ gian lận theo buổi'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 785,
+          "z": 29000,
+          "width": 1240,
+          "height": 26,
+          "config": "{\"name\": \"v029bbe7e3ccd19f\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 785, \"z\": 29000, \"width\": 1240, \"height\": 26}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Nguồn: Credit Card Fraud Detection – Worldline & ULB Machine Learning Group (ODbL) · 284.807 giao dịch thẻ châu Âu trong 2 ngày (9/2013) · V1..V28 là PCA ẩn danh · Giờ là giờ tương đối tính từ giao dịch đầu tiên.\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#555555\"}}]}]}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection2",
+      "displayName": "Mô hình",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 815,
+      "filters": "[]",
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 6,
+          "z": 30000,
+          "width": 1240,
+          "height": 48,
+          "config": "{\"name\": \"v0306312c050cda4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 6, \"z\": 30000, \"width\": 1240, \"height\": 48}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"💳 PeterPark · Mô hình phát hiện (Random Forest)\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 58,
+          "z": 31000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v031e8e0ce643c96\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 58, \"z\": 31000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.ngay\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"ngay\"}, \"Name\": \"fact_giao_dich.ngay\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'📅 Ngày (1–2)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 290,
+          "y": 58,
+          "z": 32000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v032ff72e32c3fb3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 290, \"y\": 58, \"z\": 32000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_gio.buoi\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_gio\", \"Entity\": \"dim_gio\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_gio\"}}, \"Property\": \"buoi\"}, \"Name\": \"dim_gio.buoi\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'🕒 Buổi (giờ tương đối)'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 560,
+          "y": 58,
+          "z": 33000,
+          "width": 260,
+          "height": 88,
+          "config": "{\"name\": \"v0339df5bbd82cd6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 58, \"z\": 33000, \"width\": 260, \"height\": 88}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"dim_khoang_tien.nhom\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"dim_khoang_tien\", \"Entity\": \"dim_khoang_tien\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"dim_khoang_tien\"}}, \"Property\": \"nhom\"}, \"Name\": \"dim_khoang_tien.nhom\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'💶 Nhóm số tiền'\"}}}}}]}, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 167,
+          "z": 34000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0347f810ba31cf4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 167, \"z\": 34000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.PR-AUC Random Forest\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"PR-AUC Random Forest\"}, \"Name\": \"fact_giao_dich.PR-AUC Random Forest\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'PR-AUC (RF)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 227,
+          "y": 167,
+          "z": 35000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v0358bf924bf1ca4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 227, \"y\": 167, \"z\": 35000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Số cảnh báo\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Số cảnh báo\"}, \"Name\": \"fact_giao_dich.Số cảnh báo\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Số cảnh báo (ngưỡng 0,22)'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 434,
+          "y": 167,
+          "z": 36000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v036c1064cc77de9\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 434, \"y\": 167, \"z\": 36000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Bắt được\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Bắt được\"}, \"Name\": \"fact_giao_dich.Bắt được\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gian lận bắt được'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 641,
+          "y": 167,
+          "z": 37000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v037f8d3a9b11736\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 641, \"y\": 167, \"z\": 37000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Bỏ sót\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Bỏ sót\"}, \"Name\": \"fact_giao_dich.Bỏ sót\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Gian lận bỏ sót'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 848,
+          "y": 167,
+          "z": 38000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v03890fe4e26bb9d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 848, \"y\": 167, \"z\": 38000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Precision\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Precision\"}, \"Name\": \"fact_giao_dich.Precision\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Precision'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1055,
+          "y": 167,
+          "z": 39000,
+          "width": 200,
+          "height": 105,
+          "config": "{\"name\": \"v039461f1df0ada5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1055, \"y\": 167, \"z\": 39000, \"width\": 200, \"height\": 105}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"fact_giao_dich.Recall\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Recall\"}, \"Name\": \"fact_giao_dich.Recall\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Recall'\"}}}}}]}, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C8102E'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 282,
+          "z": 40000,
+          "width": 620,
+          "height": 250,
+          "config": "{\"name\": \"v040e5bbaea0feff\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 282, \"z\": 40000, \"width\": 620, \"height\": 250}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"tom_tat_nguong.nguong\"}], \"Y\": [{\"queryRef\": \"Sum(tom_tat_nguong.tong_chi_phi)\"}, {\"queryRef\": \"Sum(tom_tat_nguong.chi_phi_xem)\"}, {\"queryRef\": \"Sum(tom_tat_nguong.tien_bo_sot)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"tom_tat_nguong\", \"Entity\": \"tom_tat_nguong\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_nguong\"}}, \"Property\": \"nguong\"}, \"Name\": \"tom_tat_nguong.nguong\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_nguong\"}}, \"Property\": \"tong_chi_phi\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_nguong.tong_chi_phi)\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_nguong\"}}, \"Property\": \"chi_phi_xem\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_nguong.chi_phi_xem)\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_nguong\"}}, \"Property\": \"tien_bo_sot\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_nguong.tien_bo_sot)\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ngưỡng điểm vs chi phí (EUR; giả định 5 EUR/cảnh báo)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 650,
+          "y": 282,
+          "z": 41000,
+          "width": 610,
+          "height": 250,
+          "config": "{\"name\": \"v0410e7da0f47270\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 650, \"y\": 282, \"z\": 41000, \"width\": 610, \"height\": 250}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"fact_du_doan.muc_rui_ro\"}], \"Y\": [{\"queryRef\": \"fact_giao_dich.Tỷ lệ GL theo mức rủi ro\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"fact_du_doan\", \"Entity\": \"fact_du_doan\", \"Type\": 0}, {\"Name\": \"fact_giao_dich\", \"Entity\": \"fact_giao_dich\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_du_doan\"}}, \"Property\": \"muc_rui_ro\"}, \"Name\": \"fact_du_doan.muc_rui_ro\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"fact_giao_dich\"}}, \"Property\": \"Tỷ lệ GL theo mức rủi ro\"}, \"Name\": \"fact_giao_dich.Tỷ lệ GL theo mức rủi ro\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tỷ lệ gian lận thực tế theo mức rủi ro (tập kiểm tra)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 540,
+          "z": 42000,
+          "width": 620,
+          "height": 240,
+          "config": "{\"name\": \"v042ac0425b07706\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 540, \"z\": 42000, \"width\": 620, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Values\": [{\"queryRef\": \"tom_tat_mo_hinh.mo_hinh\"}, {\"queryRef\": \"Sum(tom_tat_mo_hinh.pr_auc)\"}, {\"queryRef\": \"Sum(tom_tat_mo_hinh.precision)\"}, {\"queryRef\": \"Sum(tom_tat_mo_hinh.recall)\"}, {\"queryRef\": \"Sum(tom_tat_mo_hinh.so_canh_bao)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"tom_tat_mo_hinh\", \"Entity\": \"tom_tat_mo_hinh\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_mo_hinh\"}}, \"Property\": \"mo_hinh\"}, \"Name\": \"tom_tat_mo_hinh.mo_hinh\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_mo_hinh\"}}, \"Property\": \"pr_auc\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_mo_hinh.pr_auc)\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_mo_hinh\"}}, \"Property\": \"precision\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_mo_hinh.precision)\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_mo_hinh\"}}, \"Property\": \"recall\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_mo_hinh.recall)\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_mo_hinh\"}}, \"Property\": \"so_canh_bao\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_mo_hinh.so_canh_bao)\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'So sánh mô hình (tập kiểm tra 30% cuối theo thời gian)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 650,
+          "y": 540,
+          "z": 43000,
+          "width": 610,
+          "height": 240,
+          "config": "{\"name\": \"v043a751b539374e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 650, \"y\": 540, \"z\": 43000, \"width\": 610, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"drillFilterOtherVisuals\": true, \"projections\": {\"Category\": [{\"queryRef\": \"tom_tat_dac_trung.dac_trung\"}], \"Y\": [{\"queryRef\": \"Sum(tom_tat_dac_trung.ks)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"tom_tat_dac_trung\", \"Entity\": \"tom_tat_dac_trung\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_dac_trung\"}}, \"Property\": \"dac_trung\"}, \"Name\": \"tom_tat_dac_trung.dac_trung\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_dac_trung\"}}, \"Property\": \"ks\"}}, \"Function\": 0}, \"Name\": \"Sum(tom_tat_dac_trung.ks)\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"tom_tat_dac_trung\"}}, \"Property\": \"ks\"}}, \"Function\": 0}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Độ tách lớp KS theo đặc trưng (PCA ẩn danh)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 785,
+          "z": 44000,
+          "width": 1240,
+          "height": 26,
+          "config": "{\"name\": \"v04433c9dfaa00c7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 785, \"z\": 44000, \"width\": 1240, \"height\": 26}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Nguồn: Credit Card Fraud Detection – Worldline & ULB Machine Learning Group (ODbL) · 284.807 giao dịch thẻ châu Âu trong 2 ngày (9/2013) · V1..V28 là PCA ẩn danh · Giờ là giờ tương đối tính từ giao dịch đầu tiên.\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#555555\"}}]}]}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection3",
+      "displayName": "Insight",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 815,
+      "filters": "[]",
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 6,
+          "z": 45000,
+          "width": 1240,
+          "height": 48,
+          "config": "{\"name\": \"v045d85b52d717ef\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 6, \"z\": 45000, \"width\": 1240, \"height\": 48}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"💳 PeterPark · 9 insight chính về gian lận thẻ\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 60,
+          "z": 46000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v046eeaa43ca76a4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 60, \"z\": 46000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"0,173%\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Gian lận cực hiếm\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"492/284.807 giao dịch là gian lận. Đoán toàn bộ là bình thường vẫn đạt 99,87% accuracy, nên phải đo bằng precision, recall và PR-AUC.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 435,
+          "y": 60,
+          "z": 47000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v047f923a1ee1764\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 435, \"y\": 60, \"z\": 47000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"3,4×\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Giao dịch thăm dò ≤ 1 EUR\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Nhóm ≤ 1 EUR có tỷ lệ gian lận 0,594% (gấp 3,4 lần mức chung). 113 vụ gian lận đúng 1,00 EUR, đúng kiểu thử thẻ.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 60,
+          "z": 48000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v048c0a6ed4bfe88\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 60, \"z\": 48000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"1,71%\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Giờ vắng là giờ nguy hiểm\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Giờ tương đối 02h có tỷ lệ gian lận 1,713% (gấp 9,9 lần mức chung) dù lưu lượng thấp. Đây là giờ tính từ giao dịch đầu tiên.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 192,
+          "z": 49000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v049240d4da1c236\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 192, \"z\": 49000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"62%\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Ít vụ lớn gây mất nhiều tiền\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"10% vụ gian lận lớn nhất chiếm 62% của 60.128 EUR bị mất, trong khi 50,6% vụ gian lận chỉ ≤ 10 EUR.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 435,
+          "y": 192,
+          "z": 50000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v0506a8d81ab0ef2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 435, \"y\": 192, \"z\": 50000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"27,8%\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Gian lận đến theo đợt\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"5% cửa sổ 10 phút chứa 27,8% gian lận. 37,3% cặp gian lận liên tiếp cách nhau dưới 60 giây; đỉnh là 23 vụ trong 10 phút.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 192,
+          "z": 51000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v051400eb0274172\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 192, \"z\": 51000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"KS 0,84\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"V14, V10, V12 tách lớp tốt nhất\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Ba đặc trưng PCA có KS 0,84 / 0,80 / 0,78 và cũng đứng đầu độ quan trọng RF. Ý nghĩa nghiệp vụ bị ẩn danh.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 324,
+          "z": 52000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v05279ed83c34da8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 324, \"z\": 52000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"0,825\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Random Forest thắng luật\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"PR-AUC trên 30% dữ liệu cuối: RF 0,825, Logistic 0,758, luật V14 0,613. RF ở ngưỡng 0,5: precision 98,8%, recall 74,1%.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 435,
+          "y": 324,
+          "z": 53000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v05365bce6232819\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 435, \"y\": 324, \"z\": 53000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"115\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Chỉ cần xem 115 cảnh báo\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"RF xếp hạng để analyst xem 115/85.443 giao dịch (0,13%) là bắt được 80% gian lận. Muốn bắt 90% thì cần xem 6.808 giao dịch.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 324,
+          "z": 54000,
+          "width": 405,
+          "height": 124,
+          "config": "{\"name\": \"v054b4198ee052a0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 324, \"z\": 54000, \"width\": 405, \"height\": 124}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"−79%\", \"textStyle\": {\"fontSize\": \"20pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Ngưỡng 0,22 giảm chi phí\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#1F3A93\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"97 cảnh báo, recall 78,7%, precision 87,6%: tổng chi phí 3.021 EUR so với 14.567 EUR khi không có mô hình (giả định 5 EUR/cảnh báo).\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#222222\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 460,
+          "z": 55000,
+          "width": 1240,
+          "height": 222,
+          "config": "{\"name\": \"v055c3e79379e394\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 460, \"z\": 55000, \"width\": 1240, \"height\": 222}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"🛡️ Khuyến nghị cho đội chống gian lận\", \"textStyle\": {\"fontSize\": \"14pt\", \"color\": \"#C8102E\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"1. Chấm điểm mọi giao dịch bằng Random Forest; đặt ngưỡng theo chi phí (≈ 0,22) thay vì mặc định 0,5.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}, {\"textRuns\": [{\"value\": \"2. Luật nhanh cho giao dịch ≤ 1 EUR: theo dõi thẻ có giao dịch thăm dò rồi giao dịch lớn ngay sau đó.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}, {\"textRuns\": [{\"value\": \"3. Tăng mức giám sát vào khung giờ vắng (02h–04h tương đối), khi tỷ lệ gian lận cao gấp nhiều lần.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}, {\"textRuns\": [{\"value\": \"4. Phát hiện đợt: cảnh báo khi số giao dịch rủi ro trong 10 phút vượt ngưỡng, vì gian lận dồn cụm.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}, {\"textRuns\": [{\"value\": \"5. Ưu tiên xem các cảnh báo có số tiền lớn trước: 10% vụ lớn nhất chiếm 62% tiền mất.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}, {\"textRuns\": [{\"value\": \"6. Huấn luyện lại định kỳ theo thời gian và luôn đo bằng precision, recall, PR-AUC, không dùng accuracy.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1F3A93\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 690,
+          "z": 56000,
+          "width": 1240,
+          "height": 26,
+          "config": "{\"name\": \"v05609c8bb982e24\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 690, \"z\": 56000, \"width\": 1240, \"height\": 26}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Nguồn: Credit Card Fraud Detection – Worldline & ULB Machine Learning Group (ODbL) · 284.807 giao dịch thẻ châu Âu trong 2 ngày (9/2013) · V1..V28 là PCA ẩn danh · Giờ là giờ tương đối tính từ giao dịch đầu tiên.\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#555555\"}}]}]}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ]
+}

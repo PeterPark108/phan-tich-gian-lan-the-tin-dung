@@ -1,0 +1,66 @@
+table tom_tat_nguong
+
+	column nguong
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: nguong
+
+	column so_canh_bao
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: so_canh_bao
+
+	column bat_duoc
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: bat_duoc
+
+	column bo_sot
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: bo_sot
+
+	column precision
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: precision
+
+	column recall
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: recall
+
+	column chi_phi_xem
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: chi_phi_xem
+
+	column tien_bo_sot
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: tien_bo_sot
+
+	column tong_chi_phi
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: tong_chi_phi
+
+	partition tom_tat_nguong = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\PETTER\Desktop\python\du_an_gian_lan_the_tin_dung\powerbi\tom_tat_nguong.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"nguong", type number}, {"so_canh_bao", Int64.Type}, {"bat_duoc", Int64.Type}, {"bo_sot", Int64.Type}, {"precision", type number}, {"recall", type number}, {"chi_phi_xem", type number}, {"tien_bo_sot", type number}, {"tong_chi_phi", type number}}, "en-US")
+				in
+				    Typed
+

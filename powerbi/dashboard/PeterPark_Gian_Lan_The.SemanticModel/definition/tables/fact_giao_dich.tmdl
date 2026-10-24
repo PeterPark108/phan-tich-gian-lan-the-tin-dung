@@ -1,0 +1,134 @@
+table fact_giao_dich
+
+	measure 'Số giao dịch' = COUNTROWS ( fact_giao_dich )
+		formatString: #,0
+
+	measure 'Số gian lận' = SUM ( fact_giao_dich[gian_lan] ) + 0
+		formatString: #,0
+
+	measure 'Tỷ lệ gian lận' = DIVIDE ( [Số gian lận], [Số giao dịch] )
+		formatString: 0.000%
+
+	measure 'Tổng tiền' = SUM ( fact_giao_dich[so_tien] )
+		formatString: #,0
+
+	measure 'Tiền gian lận' = CALCULATE ( SUM ( fact_giao_dich[so_tien] ), fact_giao_dich[gian_lan] = 1 ) + 0
+		formatString: #,0
+
+	measure '% tiền bị gian lận' = DIVIDE ( [Tiền gian lận], [Tổng tiền] )
+		formatString: 0.000%
+
+	measure 'Trung vị tiền gian lận' = CALCULATE ( MEDIAN ( fact_giao_dich[so_tien] ), fact_giao_dich[gian_lan] = 1 )
+		formatString: #,0.00
+
+	measure 'Trung vị tiền bình thường' = CALCULATE ( MEDIAN ( fact_giao_dich[so_tien] ), fact_giao_dich[gian_lan] = 0 )
+		formatString: #,0.00
+
+	measure 'Gian lận ≤ 1 EUR' = CALCULATE ( [Số gian lận], fact_giao_dich[so_tien] <= 1 )
+		formatString: #,0
+
+	measure 'Tỷ lệ GL ≤ 1 EUR' = CALCULATE ( [Tỷ lệ gian lận], fact_giao_dich[so_tien] <= 1 )
+		formatString: 0.000%
+
+	measure 'Gian lận đúng 1 EUR' = CALCULATE ( [Số gian lận], fact_giao_dich[so_tien] = 1 )
+		formatString: #,0
+
+	measure 'Giờ rủi ro nhất' = MAXX ( TOPN ( 1, VALUES ( dim_gio[nhan_gio] ), [Tỷ lệ gian lận] ), dim_gio[nhan_gio] )
+
+	measure 'GD kiểm tra' = COUNTROWS ( fact_du_doan )
+		formatString: #,0
+
+	measure 'Gian lận (tập kiểm tra)' = SUM ( fact_du_doan[thuc_te] ) + 0
+		formatString: #,0
+
+	measure 'Số cảnh báo' = SUM ( fact_du_doan[canh_bao] ) + 0
+		formatString: #,0
+
+	measure 'Bắt được' = CALCULATE ( COUNTROWS ( fact_du_doan ), fact_du_doan[canh_bao] = 1, fact_du_doan[thuc_te] = 1 ) + 0
+		formatString: #,0
+
+	measure 'Bỏ sót' = [Gian lận (tập kiểm tra)] - [Bắt được]
+		formatString: #,0
+
+	measure 'Precision' = DIVIDE ( [Bắt được], [Số cảnh báo] )
+		formatString: 0.0%
+
+	measure 'Recall' = DIVIDE ( [Bắt được], [Gian lận (tập kiểm tra)] )
+		formatString: 0.0%
+
+	measure 'Tỷ lệ GL theo mức rủi ro' = DIVIDE ( [Gian lận (tập kiểm tra)], [GD kiểm tra] )
+		formatString: 0.0%
+
+	measure 'PR-AUC Random Forest' = CALCULATE ( MAX ( tom_tat_mo_hinh[pr_auc] ), tom_tat_mo_hinh[mo_hinh] = "Random Forest" )
+		formatString: 0.000
+
+	column id
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: id
+
+	column time_s
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: time_s
+
+	column ngay
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: ngay
+
+	column gio
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: gio
+
+	column so_tien
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: so_tien
+
+	column gian_lan
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: gian_lan
+
+	column khoang_tien_id
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: khoang_tien_id
+
+	column V14
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: V14
+
+	column V10
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: V10
+
+	column V12
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: V12
+
+	partition fact_giao_dich = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\PETTER\Desktop\python\du_an_gian_lan_the_tin_dung\powerbi\fact_giao_dich.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"id", Int64.Type}, {"time_s", type number}, {"ngay", Int64.Type}, {"gio", Int64.Type}, {"so_tien", type number}, {"gian_lan", Int64.Type}, {"khoang_tien_id", Int64.Type}, {"V14", type number}, {"V10", type number}, {"V12", type number}}, "en-US")
+				in
+				    Typed
+

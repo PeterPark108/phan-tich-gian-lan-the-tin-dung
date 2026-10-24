@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PeterPark_Gian_Lan_The"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "32ed4f26-7db1-4873-8bd1-d6279ac649e8"
+  }
+}

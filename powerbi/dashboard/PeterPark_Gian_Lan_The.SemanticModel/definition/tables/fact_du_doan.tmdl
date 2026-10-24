@@ -1,0 +1,48 @@
+table fact_du_doan
+
+	column id
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: id
+
+	column diem_rf
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: diem_rf
+
+	column diem_lr
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: diem_lr
+
+	column thuc_te
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: thuc_te
+
+	column muc_rui_ro
+		dataType: string
+		summarizeBy: none
+		sourceColumn: muc_rui_ro
+
+	column canh_bao
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: canh_bao
+
+	partition fact_du_doan = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\PETTER\Desktop\python\du_an_gian_lan_the_tin_dung\powerbi\fact_du_doan.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"id", Int64.Type}, {"diem_rf", type number}, {"diem_lr", type number}, {"thuc_te", Int64.Type}, {"muc_rui_ro", type text}, {"canh_bao", Int64.Type}}, "en-US"),
+				    Clean = Table.ReplaceValue(Typed, "", null, Replacer.ReplaceValue, {"muc_rui_ro"})
+				in
+				    Clean
+

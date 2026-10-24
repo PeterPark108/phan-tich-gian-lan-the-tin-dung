@@ -1,0 +1,16 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+ref table fact_giao_dich
+ref table dim_gio
+ref table dim_khoang_tien
+ref table fact_du_doan
+ref table tom_tat_nguong
+ref table tom_tat_mo_hinh
+ref table tom_tat_dac_trung
+

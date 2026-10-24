@@ -1,0 +1,36 @@
+table tom_tat_dac_trung
+
+	column dac_trung
+		dataType: string
+		summarizeBy: none
+		sourceColumn: dac_trung
+
+	column ks
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: ks
+
+	column tb_binh_thuong
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: tb_binh_thuong
+
+	column tb_gian_lan
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: tb_gian_lan
+
+	partition tom_tat_dac_trung = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\PETTER\Desktop\python\du_an_gian_lan_the_tin_dung\powerbi\tom_tat_dac_trung.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"dac_trung", type text}, {"ks", type number}, {"tb_binh_thuong", type number}, {"tb_gian_lan", type number}}, "en-US"),
+				    Clean = Table.ReplaceValue(Typed, "", null, Replacer.ReplaceValue, {"dac_trung"})
+				in
+				    Clean
+

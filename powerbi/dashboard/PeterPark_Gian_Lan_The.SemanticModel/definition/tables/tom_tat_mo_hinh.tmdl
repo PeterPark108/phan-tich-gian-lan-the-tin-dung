@@ -1,0 +1,60 @@
+table tom_tat_mo_hinh
+
+	column mo_hinh
+		dataType: string
+		summarizeBy: none
+		sourceColumn: mo_hinh
+
+	column pr_auc
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: pr_auc
+
+	column roc_auc
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: roc_auc
+
+	column precision
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: precision
+
+	column recall
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: recall
+
+	column f1
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: f1
+
+	column so_canh_bao
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: so_canh_bao
+
+	column accuracy_tham_khao
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: accuracy_tham_khao
+
+	partition tom_tat_mo_hinh = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\PETTER\Desktop\python\du_an_gian_lan_the_tin_dung\powerbi\tom_tat_mo_hinh.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"mo_hinh", type text}, {"pr_auc", type number}, {"roc_auc", type number}, {"precision", type number}, {"recall", type number}, {"f1", type number}, {"so_canh_bao", Int64.Type}, {"accuracy_tham_khao", type number}}, "en-US"),
+				    Clean = Table.ReplaceValue(Typed, "", null, Replacer.ReplaceValue, {"mo_hinh"})
+				in
+				    Clean
+

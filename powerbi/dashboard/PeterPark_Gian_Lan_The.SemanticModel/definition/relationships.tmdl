@@ -1,0 +1,12 @@
+relationship 87653eb2-d0ed-44d1-9c16-7c96cc5cc676
+	fromColumn: fact_giao_dich.gio
+	toColumn: dim_gio.gio
+
+relationship 220058b8-3806-4c91-b233-01e577958ea7
+	fromColumn: fact_giao_dich.khoang_tien_id
+	toColumn: dim_khoang_tien.khoang_tien_id
+
+relationship 201af2ae-4473-4e49-a406-2cdbf77028fe
+	fromColumn: fact_du_doan.id
+	toColumn: fact_giao_dich.id
+

@@ -1,0 +1,4 @@
+mo_hinh,pr_auc,roc_auc,precision,recall,f1,so_canh_bao,accuracy_tham_khao
+Luật (1 đặc trưng),0.6133,0.9435,0.6706,0.5278,0.5907,85,0.9991
+Logistic Regression,0.7579,0.9798,0.0259,0.9074,0.0503,3787,0.9567
+Random Forest,0.8247,0.9588,0.9877,0.7407,0.8466,81,0.9997
